@@ -62,7 +62,7 @@ const pricing = [
 
 export default function Footer() {
   return (
-    <footer className="w-full flex items-start px-[4rem] py-[4rem] h-[600px]">
+    <footer className="w-full flex items-start px-[7rem] py-[4rem] h-[600px]">
       <Logo />
       <PlatformComponent />
       <Channel />
@@ -77,17 +77,30 @@ function Pricing() {
     <div className="w-[17.5%] h-full justify-between flex items-start flex-col gap-6">
       {pricing.map((el, i) => (
         <div key={i} className="w-full flex items-start flex-col gap-6">
-          <h1 className="text-base font-bold text-[#191919]">{el.title}</h1>
+          <h1
+            style={{
+              fontFamily: "Axiforma-Bold",
+            }}
+            className="text-base font-Bold text-[#191919]">
+            {el.title}
+          </h1>
           <div key={i} className="w-full flex items-start flex-col gap-4">
             {el.list.map((el, i) => (
-              <p key={i} className="text-[14px] font-medium text-[#6F7073]">
+              <p
+                style={{
+                  fontFamily: "Axiforma-Medium",
+                }}
+                key={i}
+                className="text-[14px] font-medium text-[#6F7073]">
                 {el}
               </p>
             ))}
           </div>
         </div>
       ))}
-      <div className="flex items-center gap-2">
+      <div
+        onClick={() => window.scrollTo(0, 0)}
+        className="flex items-center gap-2 cursor-pointer">
         <div className="w-[24px]">
           <ImageComponent
             height="24px"
@@ -96,7 +109,13 @@ function Pricing() {
             fit="contain"
           />
         </div>
-        <p className="text-[14px] font-medium text-[#191919]">Go back to top</p>
+        <p
+          style={{
+            fontFamily: "Axiforma-Medium",
+          }}
+          className="text-[14px] font-medium text-[#191919]">
+          Go back to top
+        </p>
       </div>
     </div>
   );
@@ -107,10 +126,21 @@ function Channel() {
     <div className="w-[17.5%] h-full flex items-start flex-col gap-6">
       {channel.map((el, i) => (
         <div key={i} className="w-full flex items-start flex-col gap-6">
-          <h1 className="text-base font-bold text-[#191919]">{el.title}</h1>
+          <h1
+            style={{
+              fontFamily: "Axiforma-Bold",
+            }}
+            className="text-base font-bold text-[#191919]">
+            {el.title}
+          </h1>
           <div key={i} className="w-full flex items-start flex-col gap-4">
             {el.list.map((el, i) => (
-              <p key={i} className="text-[14px] font-medium text-[#6F7073]">
+              <p
+                style={{
+                  fontFamily: "Axiforma-Medium",
+                }}
+                key={i}
+                className="text-[14px] font-medium text-[#6F7073]">
                 {el}
               </p>
             ))}
@@ -126,10 +156,21 @@ function PlatformComponent() {
     <div className="w-[17.5%] h-full flex items-start flex-col gap-6">
       {platform.map((el, i) => (
         <div key={i} className="w-full flex items-start flex-col gap-6">
-          <h1 className="text-base font-bold text-[#191919]">{el.title}</h1>
+          <h1
+            style={{
+              fontFamily: "Axiforma-Bold",
+            }}
+            className="text-base font-bold text-[#191919]">
+            {el.title}
+          </h1>
           <div key={i} className="w-full flex items-start flex-col gap-4">
             {el.list.map((el, i) => (
-              <p key={i} className="text-[14px] font-medium text-[#6F7073]">
+              <p
+                style={{
+                  fontFamily: "Axiforma-Medium",
+                }}
+                key={i}
+                className="text-[14px] font-medium text-[#6F7073]">
                 {el}
               </p>
             ))}
@@ -166,13 +207,21 @@ function Logo() {
         <div className="w-[76px]">
           <ImageComponent src="/logo.svg" alt="" height="25px" fit="contain" />
         </div>
-        <p className="text-[#6F7073] font-medium text-[14px] w-[90%]">
+        <p
+          style={{
+            fontFamily: "Axiforma-Medium",
+          }}
+          className="text-[#6F7073] font-medium text-[14px] w-[90%]">
           At Enif, we are dedicated to harnessing the power of AI responsibly.
           We pledge to uphold transparency, data privacy, and fairness in all
           our AI-driven processes.
         </p>
 
-        <p className="text-[#6F7073] font-medium text-[14px] w-[90%]">
+        <p
+          style={{
+            fontFamily: "Axiforma-Medium",
+          }}
+          className="text-[#6F7073] font-medium text-[14px] w-[90%]">
           Our promise is to enable you, our users, to thrive while actively
           preventing AI abuse. Together, let's shape a future where technology
           truly works for the betterment of all.

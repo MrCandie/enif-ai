@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Axiforma-Regular";
+  src: local("Axiforma"), url("./fonts/Axiforma-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Axiforma-Bold";
+  src: local("Axiforma"), url("./fonts/Axiforma-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Axiforma-Medium";
+  src: local("Axiforma"), url("./fonts/Axiforma-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Axiforma-Heavy";
+  src: local("Axiforma"), url("./fonts/Axiforma-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Axiforma-Extrabold";
+  src: local("Axiforma"),
+    url("./fonts/Axiforma-ExtraBold.ttf") format("truetype");
+}
