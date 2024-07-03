@@ -5,3 +5,11 @@
 .btn {
   background: linear-gradient(163.43deg, #b296ff 3.82%, #4a19d2 88.04%);
 }
+
+.learn {
+  border: 2px solid #4a19d2;
+}
+
+button:hover {
+  opacity: 80%;
+}

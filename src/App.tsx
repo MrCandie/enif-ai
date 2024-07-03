@@ -2,12 +2,15 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Reusable from "./components/Reusable";
+import Footer from "./components/Footer";
+import SubFooter from "./components/SubFooter";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
+
       <Reusable
         title="Ditch the Script, Get Smart Support"
         description="Enif AI is more than a chatbot. It understands your business, products, and policies to deliver personalized solutions for each customer. (Highlights personalization and unique value proposition)"
@@ -32,6 +35,9 @@ function App() {
         src="/train.png"
         bg="#6D43E2"
       />
+
+      <SubFooter />
+      <Footer />
     </>
   );
 }
