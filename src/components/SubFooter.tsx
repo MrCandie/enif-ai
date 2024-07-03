@@ -1,6 +1,6 @@
 export default function SubFooter() {
   return (
-    <div className="bg-[url('/sub-footer.png')] h-screen px-[3.5rem] bg-cover bg-center bg-no-repeat flex items-center flex-col gap-6 py-[5rem]">
+    <div className="bg-[url('/sub-footer.png')] h-[120vh] px-[3.5rem] bg-cover bg-center bg-no-repeat flex items-center flex-col gap-6 py-[5rem]">
       <h1
         style={{
           fontFamily: "Axiforma-Heavy",
